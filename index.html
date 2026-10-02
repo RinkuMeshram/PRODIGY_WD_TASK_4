@@ -1,0 +1,441 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinku Meshram | AI & Web Developer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: #0f172a;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            border-bottom: 1px solid #334155;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 100px 8%;
+        }
+
+        .home {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 50px;
+        }
+
+        .home-content {
+            max-width: 650px;
+        }
+
+        .home h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .home h1 span {
+            color: #38bdf8;
+        }
+
+        .home h2 {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .home p {
+            color: #cbd5e1;
+            margin-bottom: 25px;
+            font-size: 17px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+        }
+
+        .profile {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #38bdf8;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 35px;
+            margin-bottom: 50px;
+            color: #38bdf8;
+        }
+
+        .about {
+            background: #111827;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            color: #cbd5e1;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #cbd5e1;
+        }
+
+        .skills {
+            text-align: center;
+        }
+
+        .skill {
+            display: inline-block;
+            background: #1e293b;
+            padding: 12px 20px;
+            margin: 8px;
+            border-radius: 20px;
+            color: #bae6fd;
+            border: 1px solid #334155;
+        }
+
+        .contact {
+            background: #111827;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px;
+            color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 6px;
+                font-size: 13px;
+            }
+
+            .home {
+                flex-direction: column-reverse;
+                text-align: center;
+                padding-top: 150px;
+            }
+
+            .home h1 {
+                font-size: 40px;
+            }
+
+            .profile {
+                width: 220px;
+                height: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Rinku.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!-- HOME -->
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h1>Hello, I'm <span>Rinku Meshram</span></h1>
+
+            <h2>AI & Web Development Enthusiast</h2>
+
+            <p>
+                I am a B.Tech Artificial Intelligence Engineering student
+                passionate about Artificial Intelligence, Web Development,
+                Python and building practical technology solutions.
+            </p>
+
+            <a href="#projects" class="btn">View My Projects</a>
+        </div>
+
+        <!-- Replace this image URL with your own professional photo -->
+        <img
+            class="profile"
+            src="https://via.placeholder.com/300"
+            alt="Rinku Meshram">
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-content">
+
+            <p>
+                I am pursuing a B.Tech in Artificial Intelligence Engineering
+                at GH Raisoni College of Engineering and Management, Nagpur.
+                I am interested in Artificial Intelligence, Machine Learning,
+                Generative AI and Web Development.
+            </p>
+
+            <br>
+
+            <p>
+                I enjoy learning new technologies and developing practical
+                projects that solve real-world problems. My technical
+                interests include Python, SQL, HTML, CSS, JavaScript,
+                Machine Learning and Generative AI.
+            </p>
+
+            <br>
+
+            <p>
+                Along with academics, I have developed communication,
+                leadership, teamwork and responsibility through sports and
+                NCC activities.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- EDUCATION & EXPERIENCE -->
+    <section>
+
+        <h2 class="section-title">Education & Experience</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>B.Tech Artificial Intelligence</h3>
+                <p>
+                    GH Raisoni College of Engineering and Management,
+                    Nagpur.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Web Development Internship</h3>
+                <p>
+                    Prodigy InfoTech — practical experience in
+                    web development and frontend technologies.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>NCC Cadet</h3>
+                <p>
+                    Developed discipline, leadership, teamwork and
+                    responsibility through NCC activities.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+
+        <h2 class="section-title">My Skills</h2>
+
+        <span class="skill">Python</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">MySQL</span>
+        <span class="skill">Artificial Intelligence</span>
+        <span class="skill">Machine Learning</span>
+        <span class="skill">Generative AI</span>
+        <span class="skill">RAG</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">Canva</span>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>ESG Report Analysis using Multimodal RAG</h3>
+                <p>
+                    A Knowledge Graph-powered Multimodal RAG system
+                    designed to analyze corporate sustainability reports
+                    containing text, tables, charts and numerical data.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cricket Score Display</h3>
+                <p>
+                    A desktop application designed to display cricket
+                    scores, teams, wickets and overs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Student Management System</h3>
+                <p>
+                    A Python and MySQL based system for managing student
+                    records, attendance and academic information.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+
+        <h2 class="section-title">Accomplishments</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>National Level Handball</h3>
+                <p>
+                    Represented at national-level handball competitions
+                    and participated in university-level championships.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Handball Achievement</h3>
+                <p>
+                    Won Bronze at a West Zone University Handball
+                    Championship.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>NCC</h3>
+                <p>
+                    Active NCC cadet with experience in camps,
+                    leadership activities and team-based responsibilities.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>Email: your-email@example.com</p>
+        <p>LinkedIn: Your LinkedIn Profile</p>
+        <p>GitHub: Your GitHub Profile</p>
+
+    </section>
+
+
+    <footer>
+        <p>© 2026 Rinku Meshram. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+```
+
